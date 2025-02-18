@@ -19,8 +19,7 @@ pipeline {
                 sh "mvn clean package"
                   }
         }
- 
-	 	    	     stage('Run Application') {
+  stage('Run Application') {
             steps {
                 echo 'Running Spring Boot application...'
                 sh 'mvn spring-boot:run '
