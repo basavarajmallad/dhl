@@ -8,7 +8,7 @@ pipeline {
 		sh "cd dhl"
             }
         }
-		    stage('Set up Environment') {
+	  stage('Set up Environment') {
         steps {
             sh 'export export JAVA_HOME=$(dirname $(dirname $(readlink -f $(which java))))'            
 	        sh 'export MAVEN_HOME=/usr/share/maven'           
