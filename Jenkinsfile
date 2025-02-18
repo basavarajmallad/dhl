@@ -5,7 +5,7 @@ pipeline {
             steps {
                 sh "rm -rf dhl"
                 sh "git clone https://github.com/basavarajmallad/dhl.git"
-				 sh "cd dhl"
+		sh "cd dhl"
             }
         }
 		    stage('Set up Environment') {
