@@ -9,7 +9,7 @@ pipeline {
                 // sh "rm -rf dhl"
                 //   sh "git clone https://github.com/basavarajmallad/dhl.git"
                 //sh "cd dhl"
-                checkoutcode('parcel)
+                checkoutcode('parcel')
             }
         }
         stage('Set up Environment') {
@@ -33,7 +33,7 @@ pipeline {
         stage('build') {
             steps {
                 // sh "mvn clean package"
-                buildproject()
+                buildproject(parcelservice)
             }
         }
         stage('Upload Artifact') {
